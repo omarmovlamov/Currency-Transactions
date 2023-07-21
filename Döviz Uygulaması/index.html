@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Döviz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header-wrapper">
+          <h3>Currency Transactions</h3>
+        </div>
+        <div class="content-wrapper">
+          <input
+            type="number"
+            class="borderglobal"
+            id="amount"
+            placeholder="Amount"
+          />
+
+          <select class="selectborderglobal" id="firstCurrencyOption">
+            <option selected>USD</option>
+            <option>EUR</option>
+            <option>TRY</option>
+          </select>
+          <i class="fa-sharp fa-solid fa-arrow-right" style="color: black"></i>
+          <select class="selectborderglobal" id="secondCurrencyOption">
+            <option>USD</option>
+            <option selected>EUR</option>
+            <option>TRY</option>
+          </select>
+          <input
+            type="number"
+            class="borderglobal"
+            id="resoult"
+            placeholder="Result"
+            readonly
+          />
+        </div>
+        <span>Copyright-omarmovlamov</span>
+      </div>
+    </div>
+
+    <script src="Currency.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
